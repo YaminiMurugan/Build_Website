@@ -13,21 +13,55 @@
 <body>
 
     <!-- Hero / header Section-->
-    <header id="header">
+    <section id="header">
         <div class="container">
             <img class="logo" src="Images/logo.png" alt="logo">
             <!-- To add Header text -->
             <div class="header-text">
                 <h1>The Purpose is to <br> teach , bring learning to people</h1>
+                <span class="square"></span>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quam veniam voluptas quasi molestiae
                     tempora obcaecati impedit, at accusamus facilis molestias illum officia ratione, officiis porro
                     velit? Adipisci, iure voluptatum.
                 </p>
+                <button class="common-btn" >Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
     <!-- End of Hero Section -->
+    <!--Creation of side Navigation -->
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- Adding menu icon-->
+    <img id="menuBtn" src="Images/menu.png" alt="menu icon">
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right="-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right="0";
+            }
+            else{
+                sideNav.style.right="-250px";
+            }
+        }
+    </script>
 </body>
 
 </html>
