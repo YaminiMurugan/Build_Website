@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "open sans", sans-serif;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(Images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 30px;
+}
+
+.header-text {
+    max-width: 350px;
+    margin-top: 140px;
+}
